@@ -75,16 +75,6 @@ int main ()
 		    {
 		    for (j=1;j<=iLength;j++)
 		        {
-				if (iMap[i-1][j]<iMap[i][j])
-				    {
-				    iConnectionLen[i][j]=Max(iConnectionLen[i][j],iConnectionLen[i-1][j]+1);
-					}
-				
-				if (iMap[i][j-1]<iMap[i][j])
-				    {
-				    iConnectionLen[i][j]=Max(iConnectionLen[i][j],iConnectionLen[i][j-1]+1);
-					}
-					
 				Update(i,j);
 				}
 			}
